@@ -1,76 +1,85 @@
 # Khadija Azhar — Personal Portfolio
 
-A custom dark-feminine, executive-tech portfolio built with **HTML5, CSS3 and vanilla JavaScript**. No framework, package manager or build step is required.
+A custom personal portfolio built to showcase my work in **Artificial Intelligence, Automation, Backend Development, DevOps, and Cloud technologies**.
 
-## Run locally
+The website was created as a lightweight static site using:
 
-The simplest option is to open `index.html` in your browser.
+* **HTML5** for structure
+* **CSS3** for styling, responsive layouts, animations, and visual effects
+* **Vanilla JavaScript** for interactions, scroll effects, navigation, and the interactive **Boss Mode** portrait
+* **Git & GitHub** for version control
+* **Netlify** for deployment and hosting
 
-For the most deployment-like local test, use VS Code **Live Server**, or run a tiny local server from this folder:
+## About the Design
 
-```bash
-python -m http.server 8000
-```
+I wanted the portfolio to feel different from a typical student portfolio.
 
-Then open `http://localhost:8000`.
+The visual direction combines a **dark executive-tech aesthetic** with subtle feminine and futuristic elements. The interface uses deep black, aubergine, plum, violet, and soft accent tones, along with editorial typography and interactive details.
 
-## Folder structure
+Some of the custom features include:
+
+* Interactive **Boss Mode** portrait
+* Animated hero text
+* Responsive navigation
+* Scroll-reveal animations
+* Interactive project sections
+* Career timeline
+* Technology stack section
+* Custom favicon
+* Mobile-responsive layouts
+* Reduced-motion accessibility support
+
+## Project Structure
 
 ```text
 khadija-portfolio/
+│
 ├── index.html
 ├── style.css
 ├── script.js
 ├── README.md
+├── .gitignore
+│
 └── assets/
     ├── images/
-    │   └── khadija-portrait.png
     └── documents/
-        └── Khadija-Azhar-CV.pdf
 ```
 
-## Main customizations
+## Running Locally
 
-### Change social links
-Search `index.html` for:
-- `github.com/KhadijaAzhar902`
-- `linkedin.com/in/khadija-a-13b826409`
+No frameworks, package managers, or build tools are required.
 
-### Replace your photo
-Replace `assets/images/khadija-portrait.png` while keeping the same filename, or update the image path in the hero portrait `<picture>` elements.
+Clone the repository:
 
-### Replace your CV
-Replace `assets/documents/Khadija-Azhar-CV.pdf` and keep the same filename. The hero and navigation download buttons will continue to work automatically.
+```bash
+git clone https://github.com/KhadijaAzhar902/khadija-portfolio.git
+```
 
-### Edit typewriter phrases
-Open `script.js` and find the `phrases` array near the top.
-
-### Edit colors
-Open `style.css` and change the CSS variables inside `:root`, especially:
-- `--bg`
-- `--surface`
-- `--plum`
-- `--violet`
-- `--violet-bright`
-- `--violet-soft`
-- `--champagne`
-
-## Boss Mode interaction
-
-The hero portrait uses the **same real photograph** in two visual layers. JavaScript tracks cursor position and CSS creates a local futuristic reveal with violet relighting, scanning lines, HUD geometry, grid effects and subtle 3D tilt. On touch devices, tap the portrait to toggle Boss Mode.
-
-## Contact form
-
-The contact form intentionally has no backend. Submitting it opens the visitor's default email client with a pre-filled draft addressed to `khadijaceo90@gmail.com`.
+Open the project folder in VS Code and launch `index.html` using **Live Server**, or simply open `index.html` directly in your browser.
 
 ## Deployment
 
-### Netlify
-Drag this entire folder into Netlify's manual deploy area, or connect the GitHub repository containing these files. There is no build command.
+The source code is stored and version-controlled on **GitHub**.
 
-### GitHub Pages
-Push the folder contents to a repository, then enable **Settings → Pages → Deploy from a branch** and select your branch/root folder.
+The completed static website is deployed through **Netlify**, which is used as the hosting and continuous deployment platform. Netlify is not used to build the website itself.
 
-## Accessibility
+Changes follow this workflow:
 
-The site respects `prefers-reduced-motion`, has keyboard support for the Boss Mode portrait, uses semantic sections and preserves visible focus states.
+```text
+VS Code → Git → GitHub → Netlify
+```
+
+Whenever changes are pushed to the main GitHub branch, Netlify automatically publishes the updated version of the website.
+
+## Live Portfolio
+
+**khadijaazhar.netlify.app**
+
+## Author
+
+**Khadija Azhar**
+**KhadijaAzhar902**
+
+---
+
+Designed as a personal space to document what I build, what I learn, and where I am heading in technology.
