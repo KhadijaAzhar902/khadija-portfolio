@@ -3651,3 +3651,233 @@ img {
   }
 
 }
+
+/* =========================================================
+   FINAL MOBILE FIX — CLIENT PROJECT CARD
+========================================================= */
+
+@media (max-width: 720px) {
+
+  /* Keep project clear of fixed header when jumping to section */
+  #projects {
+    scroll-margin-top: 82px;
+  }
+
+  /* CLIENT CARD */
+  .client-card {
+    min-height: 0 !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    overflow: hidden !important;
+  }
+
+
+  /* TOP LABELS */
+  .client-card .project-meta {
+    top: 18px !important;
+    left: 18px !important;
+    right: 18px !important;
+
+    font-size: .46rem !important;
+  }
+
+
+  /* COPY AREA */
+  .client-card .project-copy {
+    padding: 72px 18px 26px !important;
+  }
+
+
+  /* WAJEEHA DAWOOD */
+  .client-card .project-copy h3 {
+    margin-bottom: 18px !important;
+
+    font-size: clamp(2.7rem, 13vw, 3.55rem) !important;
+    line-height: .86 !important;
+    letter-spacing: -.065em !important;
+  }
+
+  .client-card .project-copy h3 span {
+    display: block !important;
+  }
+
+
+  /* DESCRIPTION */
+  .client-card .project-copy > p {
+    max-width: 100% !important;
+
+    margin-bottom: 20px !important;
+
+    font-size: .91rem !important;
+    line-height: 1.62 !important;
+  }
+
+
+  /* TECH TAGS */
+  .client-card .tech-row {
+    gap: 6px !important;
+    margin-bottom: 22px !important;
+  }
+
+  .client-card .tech-row span {
+    padding: 6px 8px !important;
+    font-size: .58rem !important;
+  }
+
+
+  /* LIVE LINK */
+  .client-card .project-link {
+    font-size: .68rem !important;
+    gap: 9px !important;
+  }
+
+
+  /* =======================================================
+     PREVIEW — COMPACT, NOT AN ENTIRE SECOND WEBSITE
+  ======================================================= */
+
+  .client-visual {
+    min-height: 260px !important;
+
+    padding: 24px 16px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+
+  .client-browser {
+    width: 100% !important;
+    max-width: 330px !important;
+
+    transform: none !important;
+
+    margin: 0 auto !important;
+  }
+
+
+  /* browser header */
+  .client-browser-bar {
+    min-height: 30px !important;
+    padding: 0 10px !important;
+  }
+
+  .client-browser-bar > span {
+    max-width: 180px !important;
+
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+
+    font-size: .32rem !important;
+  }
+
+
+  /* preview content */
+  .client-browser-screen {
+    min-height: 190px !important;
+
+    padding: 22px 18px !important;
+  }
+
+
+  .client-kicker {
+    margin-bottom: 14px !important;
+
+    font-size: .38rem !important;
+  }
+
+
+  .client-name {
+    margin-bottom: 15px !important;
+  }
+
+  .client-name strong {
+    font-size: 2rem !important;
+    line-height: .85 !important;
+  }
+
+  .client-name em {
+    margin-top: 3px !important;
+
+    font-size: 1.75rem !important;
+  }
+
+
+  .client-browser-screen p {
+    margin-bottom: 14px !important;
+
+    font-size: .86rem !important;
+    line-height: 1.25 !important;
+  }
+
+
+  .client-ui-line {
+    margin-top: 7px !important;
+  }
+
+
+  .client-mini-button {
+    margin-top: 15px !important;
+
+    padding: 7px 9px !important;
+
+    font-size: .34rem !important;
+  }
+
+
+  /* Live badge — smaller and inside card */
+  .client-live {
+    top: 12px !important;
+    right: 12px !important;
+
+    padding: 5px 7px !important;
+
+    font-size: .34rem !important;
+  }
+
+
+  /* remove clutter */
+  .client-visual .visual-caption {
+    display: none !important;
+  }
+
+}
+
+
+/* =========================================================
+   IPHONE 13 / SMALLER
+========================================================= */
+
+@media (max-width: 430px) {
+
+  .client-card .project-copy h3 {
+    font-size: 3rem !important;
+  }
+
+  .client-card .project-copy > p {
+    font-size: .88rem !important;
+  }
+
+  .client-visual {
+    min-height: 235px !important;
+  }
+
+  .client-browser {
+    max-width: 310px !important;
+  }
+
+  .client-browser-screen {
+    min-height: 180px !important;
+  }
+
+  .client-name strong {
+    font-size: 1.85rem !important;
+  }
+
+  .client-name em {
+    font-size: 1.6rem !important;
+  }
+
+}
