@@ -3206,3 +3206,285 @@ img {
   }
 
 }
+
+/* =========================================================
+   KHADIJA.AI — FINAL PHONE CORRECTIONS
+   Hero overflow + portrait size + compact contact
+========================================================= */
+
+@media (max-width: 480px) {
+
+  /* =======================================================
+     1. HERO — ACTUALLY CONTAIN EVERYTHING
+  ======================================================= */
+
+  :root {
+    --page: calc(100% - 28px);
+  }
+
+  .hero {
+    width: 100%;
+    min-width: 0;
+
+    grid-template-columns: minmax(0, 1fr);
+
+    gap: 34px;
+
+    padding-top: 104px;
+    padding-bottom: 46px;
+
+    overflow: hidden;
+  }
+
+  .hero-copy {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+
+    top: 0;
+
+    overflow: visible;
+  }
+
+
+  /* AI / AUTOMATION / BACKEND */
+
+  .eyebrow {
+    width: 100%;
+    max-width: 100%;
+
+    flex-wrap: wrap;
+
+    gap: 7px 9px;
+
+    margin-bottom: 20px;
+
+    font-size: .52rem;
+    line-height: 1.55;
+    letter-spacing: .055em;
+  }
+
+
+  /* -------------------------------------------------------
+     KHADIJA / AZHAR
+     Smaller but still intentionally oversized
+  ------------------------------------------------------- */
+
+  .hero-name {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+
+    font-size: clamp(3rem, 13.5vw, 3.65rem);
+
+    line-height: .82;
+    letter-spacing: -.07em;
+  }
+
+  .name-line {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+
+    white-space: nowrap;
+  }
+
+  .name-line.outline {
+    -webkit-text-stroke-width: .9px;
+  }
+
+
+  /* -------------------------------------------------------
+     ARTIFICIAL INTELLIGENCE, ENGINEERED WITH INTENT.
+  ------------------------------------------------------- */
+
+  .hero-editorial {
+    width: 100%;
+    max-width: 100%;
+
+    margin-top: 18px;
+
+    font-size: clamp(1.12rem, 5.3vw, 1.35rem);
+    line-height: 1.18;
+
+    white-space: normal;
+
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  .hero-editorial em,
+  .editorial-word {
+    white-space: normal;
+  }
+
+
+  /* -------------------------------------------------------
+     I BUILD [...]
+  ------------------------------------------------------- */
+
+  .build-line {
+    width: 100%;
+    max-width: 100%;
+
+    margin-top: 24px;
+
+    gap: 6px;
+
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .type-wrap,
+  .type-wrap strong {
+    max-width: 100%;
+  }
+
+
+  /* -------------------------------------------------------
+     HERO DESCRIPTION
+  ------------------------------------------------------- */
+
+  .hero-intro {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+
+    margin-top: 20px;
+
+    font-size: .92rem;
+    line-height: 1.72;
+
+    white-space: normal;
+
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+
+  /* =======================================================
+     2. PORTRAIT — LESS MASSIVE ON PHONE
+  ======================================================= */
+
+  .hero-portrait-wrap {
+    width: min(76vw, 300px);
+    max-width: 300px;
+
+    justify-self: center;
+
+    margin: 8px auto 0;
+
+    top: 0;
+  }
+
+  .portrait-card {
+    width: 100%;
+    max-width: 100%;
+
+    transform: none !important;
+  }
+
+  .portrait-note {
+    margin-top: 10px;
+
+    text-align: center;
+
+    font-size: .42rem;
+    line-height: 1.5;
+  }
+
+  .portrait-orbit {
+    display: none;
+  }
+
+
+  /* =======================================================
+     3. CONTACT — LESS IS MORE
+  ======================================================= */
+
+  .contact {
+    min-height: 0;
+
+    padding-top: 68px;
+  }
+
+  .contact-layout {
+    gap: 34px;
+
+    padding-top: 52px;
+    padding-bottom: 58px;
+  }
+
+
+  /* LinkedIn / GitHub */
+
+  .contact-links {
+    margin-top: 30px;
+  }
+
+  .contact-links a {
+    padding: 15px 0;
+  }
+
+
+  /* Form box */
+
+  .contact-form {
+    width: 100%;
+    max-width: 100%;
+
+    padding: 16px;
+  }
+
+  .form-head {
+    padding-bottom: 14px;
+  }
+
+  .contact-form label {
+    margin-top: 16px;
+  }
+
+  .contact-form label > span {
+    margin-bottom: 5px;
+
+    font-size: .69rem;
+  }
+
+
+  /* Inputs */
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: .92rem;
+
+    padding: 7px 0 10px;
+  }
+
+
+  /* THIS fixes that enormous Message field */
+
+  .contact-form textarea {
+    height: 120px;
+    min-height: 120px;
+    max-height: 120px;
+
+    resize: none;
+  }
+
+
+  /* Email button */
+
+  .contact-form .btn {
+    min-height: 50px;
+
+    margin-top: 20px;
+  }
+
+  .form-footnote {
+    margin-top: 8px;
+
+    line-height: 1.5;
+  }
+
+}
