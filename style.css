@@ -3097,3 +3097,557 @@ img {
     max-width: 255px;
   }
 }
+
+/* =========================================================
+   CLIENT PORTFOLIO PROJECT VISUAL
+========================================================= */
+
+.client-visual {
+  position: relative;
+
+  background:
+    radial-gradient(
+      circle at 68% 32%,
+      rgba(205,185,143,.10),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 20% 78%,
+      rgba(119,64,207,.13),
+      transparent 31%
+    ),
+    linear-gradient(
+      145deg,
+      #09060d,
+      #120b17
+    );
+
+  display: grid;
+
+  place-items: center;
+
+  overflow: hidden;
+}
+
+
+/* subtle background grid */
+
+.client-visual::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  opacity: .28;
+
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,.035) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,.035) 1px,
+      transparent 1px
+    );
+
+  background-size: 34px 34px;
+}
+
+
+/* =========================
+   MINI BROWSER
+========================= */
+
+.client-browser {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(78%, 470px);
+
+  border:
+    1px solid rgba(205,185,143,.25);
+
+  background:
+    rgba(8,5,11,.92);
+
+  box-shadow:
+    0 32px 80px rgba(0,0,0,.42),
+    0 0 45px rgba(119,64,207,.08);
+
+  transform:
+    perspective(900px)
+    rotateY(-4deg)
+    rotateX(2deg);
+
+  transition:
+    transform .5s var(--ease),
+    border-color .4s ease,
+    box-shadow .4s ease;
+}
+
+
+.client-card:hover .client-browser {
+  transform:
+    perspective(900px)
+    rotateY(0deg)
+    rotateX(0deg)
+    translateY(-6px);
+
+  border-color:
+    rgba(205,185,143,.46);
+
+  box-shadow:
+    0 38px 90px rgba(0,0,0,.48),
+    0 0 60px rgba(119,64,207,.13);
+}
+
+
+/* browser top */
+
+.client-browser-bar {
+  min-height: 38px;
+
+  padding:
+    0 13px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  border-bottom:
+    1px solid rgba(255,255,255,.08);
+
+  background:
+    rgba(255,255,255,.025);
+}
+
+
+.client-browser-bar > span {
+  margin-left: auto;
+
+  color:
+    rgba(232,220,235,.42);
+
+  font-size:
+    .42rem;
+
+  letter-spacing:
+    .04em;
+}
+
+
+/* three browser dots */
+
+.client-dots {
+  display: flex;
+
+  gap: 5px;
+}
+
+
+.client-dots i {
+  width: 5px;
+
+  height: 5px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(255,255,255,.20);
+}
+
+
+.client-dots i:first-child {
+  background:
+    var(--champagne);
+}
+
+
+/* =========================
+   CLIENT WEBSITE PREVIEW
+========================= */
+
+.client-browser-screen {
+  position: relative;
+
+  min-height: 350px;
+
+  padding:
+    38px 30px 30px;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 75% 18%,
+      rgba(205,185,143,.09),
+      transparent 28%
+    ),
+    linear-gradient(
+      145deg,
+      #171310,
+      #211821
+    );
+}
+
+
+/* faint editorial grid */
+
+.client-browser-screen::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  opacity: .18;
+
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,.06) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,.06) 1px,
+      transparent 1px
+    );
+
+  background-size:
+    52px 52px;
+}
+
+
+.client-browser-screen > * {
+  position: relative;
+
+  z-index: 2;
+}
+
+
+/* label */
+
+.client-kicker {
+  display: block;
+
+  margin-bottom: 27px;
+
+  color:
+    var(--champagne);
+
+  font-size:
+    .48rem;
+
+  letter-spacing:
+    .12em;
+}
+
+
+/* WAJEEHA / Dawood */
+
+.client-name {
+  margin-bottom:
+    25px;
+}
+
+
+.client-name strong {
+  display: block;
+
+  color:
+    #f4eff4;
+
+  font:
+    700 clamp(2.2rem,4.5vw,4.2rem)/.82
+    var(--display);
+
+  letter-spacing:
+    -.065em;
+}
+
+
+.client-name em {
+  display: block;
+
+  margin-top:
+    4px;
+
+  color:
+    var(--champagne);
+
+  font:
+    italic 500 clamp(2rem,4vw,3.8rem)/.9
+    var(--editorial);
+}
+
+
+/* statement */
+
+.client-browser-screen p {
+  margin:
+    0 0 24px;
+
+  color:
+    rgba(246,241,247,.78);
+
+  font:
+    500 clamp(1rem,1.9vw,1.45rem)/1.2
+    var(--display);
+
+  letter-spacing:
+    -.025em;
+}
+
+
+/* fake content lines */
+
+.client-ui-line {
+  width: 80%;
+
+  height: 1px;
+
+  margin-top:
+    11px;
+
+  background:
+    rgba(255,255,255,.17);
+}
+
+
+.client-ui-line.short {
+  width:
+    52%;
+}
+
+
+/* fake button */
+
+.client-mini-button {
+  width:
+    max-content;
+
+  margin-top:
+    29px;
+
+  padding:
+    10px 13px;
+
+  border:
+    1px solid rgba(205,185,143,.32);
+
+  color:
+    var(--champagne);
+
+  font-size:
+    .43rem;
+
+  letter-spacing:
+    .09em;
+
+  background:
+    rgba(205,185,143,.035);
+}
+
+
+/* =========================
+   LIVE BADGE
+========================= */
+
+.client-live {
+  position: absolute;
+
+  z-index: 5;
+
+  top:
+    24px;
+
+  right:
+    24px;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  gap:
+    7px;
+
+  padding:
+    7px 9px;
+
+  border:
+    1px solid rgba(203,176,238,.18);
+
+  background:
+    rgba(8,5,12,.72);
+
+  backdrop-filter:
+    blur(9px);
+
+  color:
+    rgba(235,224,244,.68);
+
+  font-size:
+    .43rem;
+}
+
+
+.client-live i {
+  width:
+    5px;
+
+  height:
+    5px;
+
+  border-radius:
+    50%;
+
+  background:
+    var(--violet-bright);
+
+  box-shadow:
+    0 0 13px
+    rgba(157,105,231,.8);
+
+  animation:
+    clientLivePulse
+    1.8s ease-in-out infinite;
+}
+
+
+@keyframes clientLivePulse {
+
+  50% {
+    opacity:
+      .35;
+
+    transform:
+      scale(.72);
+  }
+
+}
+
+
+/* =========================================================
+   CLIENT CARD MOBILE
+========================================================= */
+
+@media (max-width: 720px) {
+
+  .client-visual {
+    min-height:
+      310px;
+  }
+
+  .client-browser {
+    width:
+      min(88%, 360px);
+
+    transform:
+      none;
+  }
+
+  .client-card:hover
+  .client-browser {
+    transform:
+      none;
+  }
+
+  .client-browser-screen {
+    min-height:
+      260px;
+
+    padding:
+      30px 22px 24px;
+  }
+
+  .client-kicker {
+    margin-bottom:
+      20px;
+  }
+
+  .client-name {
+    margin-bottom:
+      20px;
+  }
+
+  .client-name strong {
+    font-size:
+      clamp(2rem,11vw,3rem);
+  }
+
+  .client-name em {
+    font-size:
+      clamp(1.9rem,10vw,2.8rem);
+  }
+
+  .client-browser-screen p {
+    font-size:
+      1rem;
+  }
+
+  .client-live {
+    top:
+      16px;
+
+    right:
+      16px;
+  }
+
+}
+
+
+/* smaller phones */
+
+@media (max-width: 430px) {
+
+  .client-visual {
+    min-height:
+      285px;
+  }
+
+  .client-browser {
+    width:
+      91%;
+  }
+
+  .client-browser-bar {
+    min-height:
+      32px;
+  }
+
+  .client-browser-bar > span {
+    font-size:
+      .36rem;
+  }
+
+  .client-browser-screen {
+    min-height:
+      235px;
+
+    padding:
+      25px 18px 20px;
+  }
+
+  .client-name strong {
+    font-size:
+      2.25rem;
+  }
+
+  .client-name em {
+    font-size:
+      2.1rem;
+  }
+
+  .client-mini-button {
+    margin-top:
+      22px;
+  }
+
+}
